@@ -1,0 +1,31 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Outputs (transcrições, áudios extraídos, modelos do Whisper)
+saidas/
+*.wav
+
+# Vídeos de entrada (aulas em .mkv — binários grandes, não são código)
+video_base/
+*.mkv
+*.mp4
+*.avi
+*.mov
+
+# Cache de modelos do Whisper
+*.bin
+models/
+
+# Notebooks checkpoints
+.ipynb_checkpoints/
+
+# Colab / Jupyter
+.claude/

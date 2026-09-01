@@ -19,10 +19,14 @@ video_base/
 *.mp4
 *.avi
 *.mov
+docs/
 
 # Cache de modelos do Whisper
 *.bin
 models/
+
+# Notas de desenvolvimento (não fazem parte do projeto versionado)
+docs/
 
 # Notebooks checkpoints
 .ipynb_checkpoints/

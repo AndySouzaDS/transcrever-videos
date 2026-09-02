@@ -1,0 +1,392 @@
+# Glossário — Claude Code: Visão Geral
+# Baseado na documentação oficial: https://code.claude.com/docs/pt/glossary
+# Grafia é a fonte de verdade — o LLM usa esta lista pra corrigir
+# o que o Whisper possa ter interpretado errado.
+
+# ─── Produto e empresa ────────────────────────────────────
+Claude Code
+Anthropic
+Claude
+Fable 5
+Opus 4.6
+Sonnet 4.6
+Haiku
+MCP
+Model Context Protocol
+Claude Code on the web
+
+# ─── Conceitos centrais ───────────────────────────────────
+Agentic coding
+Agentic harness
+Agentic loop
+Agent teams
+Subagent
+Subagents
+Tool
+Tools
+Turn
+Session
+Sessions
+Compaction
+Context window
+Auto memory
+Bare mode
+Bundled skills
+Bundled skill
+Bundled command
+Bundled commands
+Channel
+Channels
+Checkpoint
+Checkpoints
+Dispatch
+Effort level
+Extended thinking
+Hook
+Hooks
+Managed settings
+MCP Tool Search
+Non-interactive mode
+Output style
+Output styles
+Permission mode
+Permission modes
+Permission rule
+Permission rules
+Plan mode
+Plugin
+Plugins
+Project trust
+Prompt injection
+Remote Control
+Rules
+Sandboxing
+Settings layers
+Skill
+Skills
+Surface
+Surfaces
+Teleport
+Verification loop
+Worktree isolation
+
+# ─── Permission modes (canônicos) ─────────────────────────
+default
+acceptEdits
+plan
+auto
+dontAsk
+bypassPermissions
+manual
+
+# ─── Comandos built-in ────────────────────────────────────
+/clear
+/model
+/compact
+/plan
+/rewind
+/context
+/resume
+/mcp
+/batch
+/code-review
+/debug
+/loop
+/teleport
+/goal
+/cloud
+/skill-name
+/deploy
+
+# ─── Tools disponíveis ─────────────────────────────────────
+Read
+Write
+Edit
+Bash
+Grep
+Glob
+WebFetch
+WebSearch
+TodoWrite
+Task
+Agent
+
+# ─── Hooks: eventos (Hook events) ─────────────────────────
+PreToolUse
+PostToolUse
+SessionStart
+SessionEnd
+Notification
+Stop
+SubagentStop
+UserPromptSubmit
+
+# ─── Hooks: tipos de handler ──────────────────────────────
+command
+http
+mcp
+prompt
+subagent
+
+# ─── Estrutura de diretórios e paths ──────────────────────
+.claude
+.claude/
+CLAUDE.md
+CLAUDE.local.md
+.claude/CLAUDE.md
+.claude/skills/
+.claude/agents/
+.claude/commands/
+.claude/rules/
+.claude/settings.json
+.claude/settings.local.json
+.mcp.json
+~/.claude/
+~/.claude/CLAUDE.md
+~/.claude/settings.json
+~/.claude/projects/
+~/.claude/projects/MEMORY.md
+.claude/worktrees/
+
+# ─── Plugin / marketplace ──────────────────────────────────
+marketplace
+plugin-name:skill-name
+plugin-name:command-name
+
+# ─── Flags de linha de comando ────────────────────────────
+--bare
+-p
+--print
+--no-session-persistence
+-c
+--fork-session
+-w
+--cloud
+
+# ─── Variáveis de ambiente ────────────────────────────────
+CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS
+MAX_THINKING_TOKENS
+
+# ─── Subagents built-in ───────────────────────────────────
+Explore
+Plan
+general-purpose
+
+# ─── Conceitos de modelo (preservar grafia em inglês) ─────
+prompts
+system prompt
+user prompt
+token
+tokens
+tokenization
+tool use
+function calling
+reasoning
+chain of thought
+few-shot
+zero-shot
+in-context learning
+prompt engineering
+hallucination
+guardrails
+retrieval-augmented generation
+RAG
+embeddings
+fine-tuning
+RLHF
+distillation
+eval
+evals
+benchmark
+benchmarks
+swe-bench
+SWE-bench
+HumanEval
+temperature
+top-p
+top-k
+thinking tokens
+
+# ─── Output styles built-in ───────────────────────────────
+Default
+Proactive
+Explanatory
+Learning
+
+# ─── Integrações / canais ─────────────────────────────────
+Telegram
+Discord
+iMessage
+Slack
+VS Code
+JetBrains
+Desktop
+claude.ai
+Chrome
+
+# ─── Segurança / classificação ────────────────────────────
+classifier
+sandbox
+trust gate
+MCP server
+MCP servers
+
+# ─── Workflow / Engenharia de software ────────────────────
+TDD
+Test-Driven Development
+refactor
+refactoring
+code review
+pair programming
+rubber duck debugging
+git
+git worktree
+worktree
+worktrees
+branch
+branches
+commit
+commits
+PR
+merge
+rebase
+diff
+CI
+CI/CD
+continuous integration
+continuous deployment
+Docker
+container
+containers
+Kubernetes
+
+# ─── Linguagens e ferramentas ─────────────────────────────
+TypeScript
+JavaScript
+Python
+Rust
+Go
+Node.js
+npm
+npx
+uv
+pip
+PyPI
+pytest
+JSON
+YAML
+TOML
+Markdown
+regex
+API
+APIs
+REST
+GraphQL
+gRPC
+WebSocket
+OAuth
+JWT
+SSH
+TLS
+SSL
+HTTP
+HTTPS
+stdio
+JSON-RPC
+shell
+
+# ─── Modelos e fornecedores ───────────────────────────────
+OpenAI
+GPT
+GPT-4
+GPT-4o
+o1
+o3
+Gemini
+Google
+Mistral
+Llama
+Meta
+Qwen
+Alibaba
+DeepSeek
+Hugging Face
+HuggingFace
+OpenRouter
+
+# ─── Trilha/contexto do curso ─────────────────────────────
+trilha_claude_code_jd
+trilha Claude Code JD
+JD
+Job Description
+Job Descriptions
+roadmap
+trilha
+trilhas
+módulo
+módulos
+aula
+aulas
+projeto
+projetos
+handson
+hands-on
+
+# ─── Termos em português (preservar grafia) ───────────────
+Engenheiro de IA
+Engenheiro de agentes
+Engenheiro de software
+Desenvolvedor
+IA generativa
+agente de codificação
+agentes de codificação
+fluxo de trabalho
+janela de contexto
+resumir
+sumarização
+memória persistente
+memória de longo prazo
+configuração
+configurações
+ambiente de execução
+políticas de segurança
+requisitos de conformidade
+frota
+infraestrutura
+sondagem
+escaneamento
+autônomo
+autônoma
+rotineiro
+iterativo
+exploração
+pesquisa
+leitura
+edição
+aprovação
+aprovação manual
+aprovação automática
+permissão
+comando
+evento
+gatilho
+extensão
+integração
+protocolo
+padrão aberto
+deploy
+release
+codebase
+base de código
+arquivo de configuração
+servidor
+cliente
+requisição
+resposta
+erro
+aviso
+log
+mensagem
+entrada
+saída
+interrupção
